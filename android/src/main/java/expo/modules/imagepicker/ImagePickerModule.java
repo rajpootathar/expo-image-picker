@@ -369,6 +369,8 @@ public class ImagePickerModule extends ExportedModule implements ActivityEventLi
     mPromise = promise;
 
     libraryIntent.setAction(Intent.ACTION_GET_CONTENT);
+    libraryIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+
     startActivityOnResult(libraryIntent, REQUEST_LAUNCH_IMAGE_LIBRARY, promise);
   }
 
