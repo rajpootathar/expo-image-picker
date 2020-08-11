@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "expo-permissions": "~9.0.1",
+    "react-native-unimodules": "~0.10.1",
     "uuid": "7.0.2"
   },
   "devDependencies": {
